@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Letras</title>
+    <script>
+'use strict'
+
+//fase1
+var nombreArray = ["P",0,"L","P","L",0,"M","A","N"];
+console.log(nombreArray);
+console.log(nombreArray);
+
+for(var i = 0; i< nombreArray.length; i++){ 
+    console.log(nombreArray[i]);
+}
+
+//fase2
+var nombreString = nombreArray.toString().replace(/,/g,"");
+var vowels = ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u"];
+console.log("Partimos del nombre "+nombreString);
+for(var i = 0; i < nombreArray.length; i++){
+    if(!isNaN(nombreArray[i])){
+        console.log("Els noms no tenen números");
+    }else if(vowels.indexOf(nombreArray[i])> -1){
+        console.log("He trobat una vocal: "+nombreArray[i]);
+    }else{
+        console.log("He trobat una consonant: "+nombreArray[i]);
+    }
+}
+//fase3
+var arrayMap = new Map();
+for(var i = 0; i < nombreArray.length; i++){
+    if(arrayMap.has(nombreArray[i])){
+        arrayMap.set(nombreArray[i], arrayMap.get(nombreArray[i])+1);
+    }else{
+        arrayMap.set(nombreArray[i], 1);
+    }
+}
+console.log(arrayMap);
+
+//fase4
+
+var nomArray = ["P","O","L"];
+var cognomArray = ["P","L","A","N","A"]
+var fullName = [];
+fullName.push(...nomArray," ",...cognomArray);
+console.log(fullName);
+
+// O SINO TAMBIÉN
+var fullName1 = [];
+for(var i = 0; i<nomArray.length; i++){
+    fullName1.push(nomArray[i]);
+}fullName1.push(" ");
+for(var i= 0; i<cognomArray.length; i++){
+    fullName1.push(cognomArray[i]);
+}
+console.log(fullName1);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+}
