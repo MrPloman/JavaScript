@@ -1,0 +1,54 @@
+
+
+body {
+    margin: auto;
+    text-align: center;
+}
+#stars{
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    position: relative;
+}
+
+.star{
+    width: 60px;
+    justify-content: center;
+}
+header{
+    height: 250px;
+}
+h1{
+    text-align: center;
+    justify-content: center;
+}
+
+#cartel{
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+#stars img:hover{
+    background-color: yellow;
+}
+#star1:hover ~ img{
+    background-color: yellow;
+}
+#star2:hover ~ img{
+    background-color: yellow;
+}
+#star3:hover ~ img{
+    background-color: yellow;
+}
+#star4:hover ~ img{
+    background-color: yellow;
+}
+#star5:hover ~ img{
+    background-color: yellow;
+}
+
+
+
+
