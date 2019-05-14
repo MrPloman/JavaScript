@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Car</h1>
+    <form>
+        <input type="text" id="plate" value="" placeholder="Plate">
+        <input type="text" id="color" value="" placeholder="Color">
+        <input type="text" id="brand" value="" placeholder="Brand">
+        <br>
+        <input type="text" id="Wheel1" value="" placeholder="Wheel 1">
+        <input type="text" id="DiamWheel1" value="" placeholder="Diam Wheel 1">
+        <br>
+        <input type="text" id="Wheel2" value="" placeholder="Wheel 2">
+        <input type="text" id="DiamWheel2" value="" placeholder="Diam Wheel 2">
+        <br>
+        <input type="text" id="Wheel3" value="" placeholder="Wheel 3">
+        <input type="text" id="DiamWheel3" value="" placeholder="Diam Wheel 3">
+        <br>
+        <input type="text" id="Wheel4" value="" placeholder="Wheel 4">
+        <input type="text" id="DiamWheel4" value="" placeholder="Diam Wheel 4">
+        <br>
+        <button type="button" onclick="createCar(plate, color, brand)">Create car</button>
+    </form>
+    <div id="recuadre">
+
+    </div>
+</body>
+<script src="../models/car.js"></script>
+<script src="../models/wheel.js"></script>
+<script src="../controllers/controller.js"></script>
